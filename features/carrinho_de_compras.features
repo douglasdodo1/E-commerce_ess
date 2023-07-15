@@ -21,3 +21,5 @@ Scenario 4:  saindo do carrinho de compras
 Given: Usuário está na página do menu geral
 When: Ele clica na opção “sair do carrinho”
 Then: Usuario está em outra página
+
+Alteração 1
