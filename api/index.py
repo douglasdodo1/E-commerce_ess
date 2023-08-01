@@ -14,11 +14,15 @@ def get_produtos():
 def post_produto():
     return {"message": "produto cadastrado"} 
 
-@app.patch("/editarProduto/{produto_id}")
+@app.patch("/editarProduto/{produtoId}")
 def update_produto():
     return {"message": "produto atualizado"} 
 
-@app.get("/lerPedidos")
+@app.delete("/removerProduto/{produtoId}")
+def delete_produto():
+    return {"message": "produto removido"} 
+
+@app.get("/lerPedidos/{usuarioId}")
 def read_pedido():
     return {"message": "lista de pedidos"}
 
@@ -26,6 +30,10 @@ def read_pedido():
 def post_produto():
     return {"message": "usuário cadastrado"} 
 
-@app.patch("/editarUsuario/{usuario_id}")
+@app.patch("/editarUsuario/{usuarioId}")
 def update_produto():
     return {"message": "usuario atualizado"} 
+
+@app.delete("/removerUsuario/{usuarioId}")
+def update_produto():
+    return {"message": "usuario removido"} 
